@@ -4,7 +4,7 @@ async function updateCounter() {
     let counterDOMElement = document.querySelector('.counter-number');
     const data = await response.json();
     console.log(data);
-    counterDOMElement.innerHTML = `Views ${data}`;
+    counterDOMElement.innerHTML = `Total Views so far are ${data}`;
 }
 
 updateCounter();
